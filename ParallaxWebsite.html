@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Parallax</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <style type="text/css">
+            body{
+                margin: 0;
+                font-family: sans-serif, Halvetica, Arial, Lato;
+                line-height: 1.8em;
+                font-size: 16px;
+                font-weight: 400;
+                height: 100%;
+                color: #666;
+            }
+            .pimg1, .pimg2, .pimg3{
+                position: relative;
+                opacity: 0.70;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+            }
+            .pimg1{
+                background: url("https://images.unsplash.com/photo-1520521025406-951b0e5e428b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24730748108e3384195bdc19e0d71dae&auto=format&fit=crop&w=1537&q=80");
+                min-height: 100%;
+                background-attachment: fixed;
+            }
+             .pimg2{
+                background: url("https://images.unsplash.com/photo-1519374086542-9ff30b72beec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1da0de9c8724bd72bd6a9d5c7c883a57&auto=format&fit=crop&w=1500&q=80");
+                min-height: 400px;
+                 background-attachment: fixed;
+            }
+             .pimg3{
+                background: url("https://images.unsplash.com/photo-1519602985774-5ca448b50061?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2e2f29c31b5091093cbc64554c509a91&auto=format&fit=crop&w=1534&q=80");
+                min-height: 400px;
+                 background-attachment: fixed;
+            }
+            .section{
+                text-align: center;
+                padding: 50px 80px;
+            }
+            .section-light{
+                background-color: #f4f4f4;
+                color: #666;
+            }
+            .section-dark{
+                background-color: #282e34;
+                color: #ddd;
+            }
+            .ptext{
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                color: #000;
+                font-size: 27px;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+            }
+            .ptext .border{
+                background-color: #111;
+                color: #fff;
+                padding: 20px;
+           }
+            .ptext .border.trans{
+                background-color: transparent;
+            }
+            @media(max-width:568px){
+                .pimg1, .pimg2, .pimg3{
+                    background-attachment: scroll;
+                }
+                .ptext{
+                    letter-spacing: 3px;
+                    font-size: 18px;
+                }
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="pimg1">
+            <div class="ptext">
+                <span class="border">
+                    Parallax Website
+                </span>
+            </div>
+        </div>
+        
+        <section class="section section-light">
+            <h2>Section One</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod</p>
+        </section>
+        
+        <div class="pimg2">
+            <div class="ptext trans">
+                <span class="border trans">
+                    Image Two Text
+                </span>
+            </div>
+        </div>
+        
+         <section class="section section-dark">
+            <h2>Section Two</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod</p>
+        </section>
+        
+        <div class="pimg3">
+            <div class="ptext">
+                <span class="border trans">
+                    Image Three Text
+                </span>
+            </div>
+        </div>
+        
+         <section class="section section-dark">
+            <h2>Section Three</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmodlorem ipsum dolor sit amet, consectetur adipiscing elit, sed to eiusmod</p>
+        </section>
+        
+        
+        <div class="pimg1">
+            <div class="ptext">
+                <span class="border">
+                    Parallax Website
+                </span>
+            </div>
+        </div>
+         
+    </body>
+</html>
